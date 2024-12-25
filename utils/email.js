@@ -13,14 +13,14 @@ const transporter = createTransport({
 
 // Password Reset Email Template
 const passwordResetTemplate = (user, url) => {
-    const { username, email } = user;
+    const { email } = user;
     return {
       from: `Mail - <${process.env.EMAIL_USER}>`,
       to: email,
       subject: `Reset Password`,
       html: `
           <h2>Password Reset Link</h2>
-          <p>Hello ${username}, reset your password by clicking on the link below:</p>
+          <p>Hello ${email}, reset your password by clicking on the link below:</p>
           <a href=${url}><button>Reset Password</button></a>
           <br />
           <br />
