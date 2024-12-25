@@ -1,0 +1,27 @@
+{
+  "name": "authentication-api-starter-code",
+  "version": "1.0.0",
+  "description": "Starter code of the tutorial for building a password Authentication API.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js localhost 8080"
+  },
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "cookie-parser": "~1.4.4",
+    "dotenv": "16.0.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^6.13.5",
+    "nodemailer": "^6.9.16"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "keywords": [
+    "authentication",
+    "express",
+    "jwt"
+  ]
+}
